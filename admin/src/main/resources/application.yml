@@ -29,7 +29,7 @@ logging:
   #    org.springframework: debug
   file:
     # 指定路径
-    path: lili-logs
+    path: lili-logs/admin
   logback:
     rollingpolicy:
       # 最大保存天数
