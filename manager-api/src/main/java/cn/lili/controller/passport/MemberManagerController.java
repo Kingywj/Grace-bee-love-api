@@ -65,7 +65,7 @@ public class MemberManagerController {
         return ResultUtil.data(memberService.updateMember(managerMemberEditDTO));
     }
 
-    @DemoSite
+//    @DemoSite
     @PreventDuplicateSubmissions
     @ApiOperation(value = "修改会员状态,开启关闭会员")
     @ApiImplicitParams({
