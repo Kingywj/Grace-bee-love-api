@@ -1,0 +1,54 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      min-spare: 50
+      max: 1000
+spring:
+  application:
+    name: SpringBootAdmin
+  boot:
+    admin:
+      notify:
+        mail:
+          to: 1814994716@qq.com
+          from: 1814994716@qq.com
+  mail:
+    username: 1814994716@qq.com
+    password: abcdefg123456!@#$%^
+# 日志
+logging:
+  config: classpath:logback-spring.xml
+  # 输出级别
+  level:
+    cn.lili: info
+  #    org.hibernate: debug
+  #    org.springframework: debug
+  file:
+    # 指定路径
+    path: lili-logs
+  logback:
+    rollingpolicy:
+      # 最大保存天数
+      max-history: 7
+      # 每个文件最大大小
+      max-file-size: 5MB
+
+# 与Spring Boot 2一样，默认情况下，大多数端点都不通过http公开，我们公开了所有端点。对于生产，您应该仔细选择要公开的端点。
+management:
+  endpoint:
+    health:
+      show-details: always
+  #  health:
+  #    elasticsearch:
+  #      enabled: false
+  #    datasource:
+  #      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
