@@ -47,7 +47,7 @@ public class SettingManagerController {
                     "QQ_WEB_CONNECT,QQ_APP_CONNECT," +
                     "QQ_WEB_CONNECT,QQ_APP_CONNECT,WEIBO_CONNECT,ALIPAY_CONNECT," +
                     "PAYMENT_SUPPORT,ALIPAY_PAYMENT,WECHAT_PAYMENT,SECKILL_SETTING,EXPERIENCE_SETTING,IM")
-    public ResultMessage saveConfig(@PathVariable String key, @RequestBody String configValue) {
+    public ResultMessage saveConfig(@PathVariable(name = "key") String key, @RequestBody String configValue) {
         SettingEnum settingEnum = SettingEnum.valueOf(key);
         //获取系统配置
         Setting setting = settingService.getById(settingEnum.name());
@@ -74,7 +74,7 @@ public class SettingManagerController {
             "QQ_WEB_CONNECT,QQ_APP_CONNECT,WEIBO_CONNECT,ALIPAY_CONNECT," +
             "PAYMENT_SUPPORT,ALIPAY_PAYMENT,WECHAT_PAYMENT,SECKILL_SETTING,EXPERIENCE_SETTING,IM"
     )
-    public ResultMessage settingGet(@PathVariable String key) {
+    public ResultMessage settingGet(@PathVariable(name = "key") String key) {
         return createSetting(key);
     }
 
