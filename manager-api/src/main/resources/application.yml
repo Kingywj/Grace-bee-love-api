@@ -143,10 +143,10 @@ swagger:
   title: lili API接口文档
   description: lili Api Documentation
   version: 1.0.0
-  termsOfServiceUrl: https://pickmall.cn
+  termsOfServiceUrl: http://112.74.56.49:8887
   contact:
     name: lili
-    url: https://pickmall.cn
+    url: http://112.74.56.49:8887
     email: admin@pickmall.com
 
 # Mybatis-plus

@@ -203,10 +203,10 @@ lili:
     sk: zhNKVrJK6UPOhqIjn8AQvG37b9sz6
   #域名
   domain:
-    pc: http://192.168.0.116:8888
-    wap: http://192.168.0.116:8888
-    seller: http://192.168.0.116:8888
-    admin: http://192.168.0.116:8888
+    pc: http://112.74.56.49:8888
+    wap: http://112.74.56.49:8888
+    seller: http://112.74.56.49:8888
+    admin: http://112.74.56.49:8888
   #api地址
   api:
     buyer: https://z171l91606.51mypc.cn
