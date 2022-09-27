@@ -24,7 +24,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://192.168.0.116:8100
+        url: http://112.74.56.49:8100
   cache:
     type: redis
   # Redis
